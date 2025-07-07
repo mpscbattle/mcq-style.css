@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
 
 body {
 
@@ -20,38 +25,38 @@ body {
       align-items: center;
     }
     .timer {
-      background-color: #ffff00;
-      color: black;
+      background-color: #000080;
+      color: white;
       padding: 2px 6px;
       border-radius: 5px;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 15px;
       margin-top: 15px;
     }
     
     .startBtn {
- background-color: #66c2ff;
+ background-color: #000080;
       color: white;
  display: inline-block;  
 padding: 2px 6px;
 border-radius: 5px;
  font-weight: bold;     
-font-size: 14px;
+font-size: 15px;
  float: right;     
 margin-bottom: 15px;
       margin-top: 15px;
      }
     
     .question {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: bold;
       margin-bottom: 10px;
     }
     .options .option {
-      font-size: 14px;
+      font-size: 15px;
       padding: 4px;
-      margin: 5px 0;
+      margin: 6px 0;
       border: 1px solid #ddd;
       border-radius: 5px;
       background-color: #f9f9f9;
@@ -59,14 +64,14 @@ margin-bottom: 15px;
       transition: background 0.3s ease;
     }
     .option.selected {
-      background-color: #80e5ff !important;
+      background-color: #00ccff !important;
     }
     .option.correct {
-      background-color: #009999;
+      background-color: #339966;
       color: white;
     }
     .option.wrong {
-      background-color: #cc0000;
+      background-color: #990000;
       color: white;
     }
     .navigation {
@@ -76,14 +81,14 @@ margin-bottom: 15px;
     }
     .btn {
       padding: 8px 16px;
-      font-size: 14px;
+      font-size: 15px;
       border-radius: 5px;
       border: none;
       cursor: pointer;
       font-weight: bold;
     }
 .btn-primary {
-  background-color: #cc0000;
+  background-color: #2e2eb8;
   color: white;
   font-weight: bold;
   display: block;
@@ -115,14 +120,14 @@ margin-bottom: 15px;
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
-      font-size: 14px;
+      font-size: 15px;
       border-radius: 5px;
     }
     .result-message {
       text-align: center;
       font-size: 16px;
       font-weight: bold;
-      color: #0056b3;
+      color: #800000;
       margin-top: 10px;
     }
   
@@ -133,14 +138,14 @@ padding: 6px;
   margin-bottom: 20px; 
       margin-top: 20px; 
 border-radius: 5px;
-  font-size: 14px;    
+  font-size: 15px;    
 
  }
   .analysis-box .option {
-  margin: 2px 0;
+  margin: 5px 0;
 border: 1px solid #ddd;
    border-radius: 5px;   
-font-size: 14px;
+font-size: 15px;
    padding: 3px;         
 }
     .feedback {
@@ -151,11 +156,11 @@ font-size: 14px;
       text-align: center;
     }
     .correct-feedback {
-      background-color: #00cc99;
+      background-color: #339966;
       color: white;
     }
     .wrong-feedback {
-      background-color: #ff4d4d;
+      background-color: #990000;
       color: white;
     }
     .not-attempted-feedback {
