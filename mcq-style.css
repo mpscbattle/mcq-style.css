@@ -27,7 +27,7 @@ body {
     .timer {
       background-color: #00b386;
       color: white;
-      padding: 2px 6px;
+      padding: 3px 7px;
       border-radius: 5px;
       font-weight: bold;
       font-size: 14px;
@@ -39,7 +39,7 @@ body {
  background-color: #00b386;
       color: white;
  display: inline-block;  
-padding: 2px 6px;
+padding: 3px 7px;
 border-radius: 5px;
  font-weight: bold;     
 font-size: 14px;
@@ -51,7 +51,7 @@ margin-bottom: 15px;
 .question-number {
   font-weight: bold;
   font-size: 14px;
-  color: #444;
+  color: #000;
   margin-bottom: 5px;
 }
 
@@ -101,7 +101,7 @@ margin-bottom: 15px;
   font-weight: bold;
   display: block;
   margin: 15px auto;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
@@ -116,6 +116,7 @@ margin-bottom: 15px;
       display: block;
       margin: 10px auto 0;
       margin-bottom: 15px;
+      padding: 4px 9px;
     }
     .report-grid {
       display: grid;
@@ -133,9 +134,9 @@ margin-bottom: 15px;
     }
     .result-message {
       text-align: center;
-      font-size: 16px;
+      font-size: 17px;
       font-weight: bold;
-      color: #800000;
+      color: #009999;
       margin-top: 10px;
     }
   
