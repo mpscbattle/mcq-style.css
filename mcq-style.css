@@ -5,96 +5,110 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0px;
+}
 
-      font-family: 'Poppins', sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0px;
-    }
-    .quiz-box, .report-card, .analysis-card {
-      max-width: 100%;
-      margin: 10px auto;
-      background: #ffffff;
-      padding: 10px;
-      border-radius: 5px;
-     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
-    }
-    .quiz-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .timer {
-      background-color: #00b386;
-      color: white;
-      padding: 3px 7px;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 15px;
-      margin-top: 15px;
-    }
-    
-    .startBtn {
- background-color: #00b386;
-      color: white;
- display: inline-block;  
-padding: 3px 7px;
-border-radius: 5px;
- font-weight: bold;     
-font-size: 14px;
- float: right;     
-margin-bottom: 15px;
-      margin-top: 15px;
-     }
-    
+.quiz-box, .report-card, .analysis-card {
+  max-width: 100%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  background-color: #00b386;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.startBtn {
+  background-color: #00b386;
+  color: white;
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 .question-number {
   font-weight: bold;
   font-size: 14px;
   color: #000;
   margin-bottom: 5px;
+  /* Added styles for yellow background */
+  background-color: yellow; /* Yellow background */
+  display: inline-block; /* To make background fit content */
+  padding: 4px 8px; /* Some padding around the number */
+  border-radius: 5px; /* Slightly rounded corners */
 }
 
-    .question {
-      font-size: 17px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-    .options .option {
-      font-size: 15px;
-      padding: 8px;
-      margin: 10px 0;
-      border: 1px solid #cccccc;
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .option.selected {
-      background-color: #00ccff !important;
-    }
-    .option.correct {
-      background-color: #00cc66;
-      color: white;
-    }
-    .option.wrong {
-      background-color: #ff471a;
-      color: white;
-    }
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
-    }
-    .btn {
-      padding: 8px 16px;
-      font-size: 15px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
+.question {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.options .option {
+  font-size: 15px;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option.selected {
+  background-color: #00ccff !important;
+}
+
+.option.correct {
+  background-color: #00cc66;
+  color: white;
+}
+
+.option.wrong {
+  background-color: #ff471a;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .btn-primary {
   background-color: #2e2eb8;
   color: white;
@@ -105,74 +119,77 @@ margin-bottom: 15px;
   border-radius: 5px;
 }
 
-    .btn-secondary {
-      background-color: #6c757d;
-      color: white;
-    }
-    .btn-black {
-      font-weight: bold;
-      background-color: black;
-      color: white;
-      display: block;
-      margin: 10px auto 0;
-      margin-bottom: 15px;
-      padding: 4px 9px;
-    }
-    .report-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .report-item {
-      background-color: #f9f9f9;
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      font-size: 15px;
-      border-radius: 5px;
-    }
-    .result-message {
-      text-align: center;
-      font-size: 17px;
-      font-weight: bold;
-      color: #009999;
-      margin-top: 10px;
-    }
-  
-    .analysis-box {
-  background-color: #f9f9f9;
- border: 1px solid #ddd;
-padding: 6px;
-  margin-bottom: 20px; 
-      margin-top: 20px; 
-border-radius: 5px;
-  font-size: 15px;    
-
- }
-  .analysis-box .option {
-  margin: 10px 0;
-border: 1px solid #ddd;
-   border-radius: 5px;   
-font-size: 15px;
-   padding: 8px;         
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
 }
-    .feedback {
-      font-weight: bold;
-      margin-top: 10px;
-      padding: 4px;
-      border-radius: 5px;
-      text-align: center;
-    }
-    .correct-feedback {
-      background-color: #00cc66;
-      color: white;
-    }
-    .wrong-feedback {
-      background-color: #ff471a;
-      color: white;
-    }
-    .not-attempted-feedback {
-      background-color: #66c2ff;
-      color: white;
-    }
+
+.btn-black {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 10px auto 0;
+  margin-bottom: 15px;
+  padding: 4px 9px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.report-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.result-message {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #009999;
+  margin-top: 10px;
+}
+
+.analysis-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 6px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.analysis-box .option {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.correct-feedback {
+  background-color: #00cc66;
+  color: white;
+}
+
+.wrong-feedback {
+  background-color: #ff471a;
+  color: white;
+}
