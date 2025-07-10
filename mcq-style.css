@@ -207,7 +207,13 @@ body {
   border-radius: 5px;
   font-size: 15px;
 }
-
+.analysis-box .question {
+font-size: 17px;  
+font-weight: bold;
+margin-bottom: 5px;
+  margin-top: 5px;
+  
+}
 .analysis-box .option {
   margin: 10px 0;
   border: 1px solid #ddd;
