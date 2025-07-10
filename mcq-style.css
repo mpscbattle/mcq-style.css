@@ -48,11 +48,12 @@ body {
   float: right;
   margin-bottom: 15px;
   margin-top: 15px;
+  border: none; /* Added: Remove border for Start Test button */
 }
 
 /* NEW: Style for the new Online Test Series button */
 .onlineTestBtn {
-  background-color: orange; /* Orange background */
+  background-color: #cc5200;
   color: white; /* White text */
   display: inline-block; /* Aligned with timer/start button */
   padding: 3px 6px; /* Same padding as startBtn for consistency */
@@ -63,6 +64,7 @@ body {
   margin-bottom: 15px;
   margin-top: 15px;
   cursor: pointer;
+  border: none; /* Added: Remove border for Online Test Series button */
 }
 
 
@@ -94,7 +96,7 @@ body {
     color: #000;
     background-color: #f2f2f2;
     display: inline-block;
-    padding: 1px 4px; /* Padding for the solved button */
+    padding: 1px 3px; /* Padding for the solved button */
     border-radius: 5px;
     /* Since this is now outside quiz-stats-row, you might need to adjust its margin-top/bottom or position if it doesn't look right */
     margin-top: 10px; /* Example: add some top margin to separate it from buttons */
