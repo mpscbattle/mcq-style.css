@@ -41,11 +41,11 @@ body {
   background-color: #00b386;
   color: white;
   display: inline-block;
-  padding: 3px 7px;
-  border-radius: 5px;
+  padding: 3px 3px;
+  border-radius: 15px;
   font-weight: bold;
-  font-size: 14px;
-  float: right;
+  font-size: 12px;
+  float: left;
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -55,11 +55,21 @@ body {
   font-size: 13px;
   color: #000;
   margin-bottom: 5px;
-  /* Added styles for orange background */
-  background-color: orange; /* orange background */
+  background-color: #b34700;
+  color: white;
   display: inline-block; /* To make background fit content */
-  padding: 3px 5px; /* Some padding around the number */
+  padding: 3px 3px; /* Some padding around the number */
   border-radius: 5px; /* Slightly rounded corners */
+}
+
+.solved-count {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #006666;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
 
 .question {
