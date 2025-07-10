@@ -64,11 +64,11 @@ body {
 
 .solved-count {
     font-weight: bold;
-    font-size: 8px;
+    font-size: 10px;
     color: #000;
     background-color: #f2f2f2;
     display: inline-block;
-    padding: 4px 8px;
+    padding: 2px 4px;
     border-radius: 5px;
 }
 
