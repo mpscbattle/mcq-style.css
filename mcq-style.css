@@ -48,46 +48,42 @@ body {
   float: right;
   margin-bottom: 15px;
   margin-top: 15px;
-  border: none; /* Added: Remove border for Start Test button */
 }
 
-/* NEW: Style for the new Online Test Series button */
 .onlineTestBtn {
-  background-color: #cc5200;
-  color: white; /* White text */
-  display: inline-block; /* Aligned with timer/start button */
-  padding: 3px 6px; /* Same padding as startBtn for consistency */
+  background-color: #b34700;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
-  float: right; /* Align to the right, just like startBtn */
+  float: right;
   margin-bottom: 15px;
   margin-top: 15px;
   cursor: pointer;
-  border: none; /* Added: Remove border for Online Test Series button */
 }
 
-
-/* NOTE: quiz-stats-row अब केवल question-number को कंटेन करेगा, solved-count अलग है */
 .quiz-stats-row {
-    /* इसे flexbox की जरूरत नहीं है अगर इसमें सिर्फ एक आइटम है, लेकिन यदि आप भविष्य में कुछ और जोड़ते हैं तो यह उपयोगी हो सकता है */
-    /* display: flex; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+/* NEW: Perfect circle for question number */
 .question-number {
   font-weight: bold;
-  font-size: 13px;
-  color: #000; /* Text color is black from your provided CSS, changed to white as per your previous request if it was `color: white;` */
-  background-color: #002699; /* Blue background */
-  color: white; /* Changed to white as per new screenshot (blue button with white text) */
-  display: inline-block; /* To make background fit content */
-  padding: 2px 5px; /* Padding for the number button */
-  border-radius: 5px; /* Slightly rounded corners */
-  margin-bottom: 5px; /* Retained from your provided CSS */
+  font-size: 12px; /* Keep font size as per your original CSS */
+  color: white; /* Text color is white */
+  background-color: #000099; 
+  display: flex; /* Use flexbox for perfect centering */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  width: 35px; /* Fixed width for the circle */
+  height: 35px; /* Fixed height, must be equal to width for a perfect circle */
+  border-radius: 50%; /* Makes it a perfect circle */
+  box-sizing: border-box; /* Include padding/border in total width/height */
+  flex-shrink: 0; /* Prevent it from shrinking */
+  /* margin-bottom: 5px; Removed, as flexbox handles vertical alignment better, if needed, add to quiz-stats-row */
 }
 
 .solved-count {
@@ -96,10 +92,10 @@ body {
     color: #000;
     background-color: #f2f2f2;
     display: inline-block;
-    padding: 1px 3px; /* Padding for the solved button */
+    padding: 1px 4px;
     border-radius: 5px;
-    /* Since this is now outside quiz-stats-row, you might need to adjust its margin-top/bottom or position if it doesn't look right */
-    margin-top: 10px; /* Example: add some top margin to separate it from buttons */
+    margin-top: 10px; /* Separates it from the navigation buttons */
+    /* If you want it right-aligned with question number, you'd need to put them in a common flex container */
 }
 
 .question {
@@ -112,7 +108,7 @@ body {
 .options .option {
   font-size: 15px;
   padding: 8px;
-  margin: 10px 0;
+  margin: 10px 0; /* Ensures space between options */
   border: 1px solid #cccccc;
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -207,13 +203,7 @@ body {
   border-radius: 5px;
   font-size: 15px;
 }
-.analysis-box .question {
-font-size: 17px;  
-font-weight: bold;
-margin-bottom: 5px;
-  margin-top: 5px;
-  
-}
+
 .analysis-box .option {
   margin: 10px 0;
   border: 1px solid #ddd;
