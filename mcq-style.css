@@ -58,7 +58,7 @@ body {
   background-color: #002699;
   color: white;
   display: inline-block; /* To make background fit content */
-  padding: 1px 2px; /* Some padding around the number */
+  padding: 3px 6px; /* Some padding around the number */
   border-radius: 5px; /* Slightly rounded corners */
 }
 
@@ -68,7 +68,7 @@ body {
     color: #000;
     background-color: #f2f2f2;
     display: inline-block;
-    padding: 1px 2px;
+    padding: 4px 8px;
     border-radius: 5px;
 }
 
