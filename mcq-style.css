@@ -62,7 +62,6 @@ body {
   float: right; /* Align to the right, just like startBtn */
   margin-bottom: 15px;
   margin-top: 15px;
-  border: none; /* Remove default button border */
   cursor: pointer;
 }
 
