@@ -48,6 +48,7 @@ body {
   float: right;
   margin-bottom: 15px;
   margin-top: 15px;
+  border: none;
 }
 
 .onlineTestBtn {
@@ -62,6 +63,7 @@ body {
   margin-bottom: 15px;
   margin-top: 15px;
   cursor: pointer;
+  border: none;
 }
 
 .quiz-stats-row {
