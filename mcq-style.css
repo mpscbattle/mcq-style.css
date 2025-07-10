@@ -52,13 +52,13 @@ body {
 
 .question-number {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   color: #000;
   margin-bottom: 5px;
-  /* Added styles for yellow background */
-  background-color: yellow; /* Yellow background */
+  /* Added styles for orange background */
+  background-color: orange; /* orange background */
   display: inline-block; /* To make background fit content */
-  padding: 4px 8px; /* Some padding around the number */
+  padding: 3px 5px; /* Some padding around the number */
   border-radius: 5px; /* Slightly rounded corners */
 }
 
@@ -85,12 +85,12 @@ body {
 }
 
 .option.correct {
-  background-color: #00cc66;
+  background-color: #00994d;
   color: white;
 }
 
 .option.wrong {
-  background-color: #ff471a;
+  background-color: #b30000;
   color: white;
 }
 
@@ -115,7 +115,7 @@ body {
   font-weight: bold;
   display: block;
   margin: 15px auto;
-  padding: 5px 10px;
+  padding: 5px 8px;
   border-radius: 5px;
 }
 
@@ -131,7 +131,7 @@ body {
   display: block;
   margin: 10px auto 0;
   margin-bottom: 15px;
-  padding: 4px 9px;
+  padding: 3px 7px;
 }
 
 .report-grid {
@@ -185,11 +185,16 @@ body {
 }
 
 .correct-feedback {
-  background-color: #00cc66;
+  background-color: #00994d;
   color: white;
 }
 
 .wrong-feedback {
-  background-color: #ff471a;
+  background-color: #b30000;
+  color: white;
+}
+
+.not-attempted-feedback {
+  background-color: #66c2ff;
   color: white;
 }
