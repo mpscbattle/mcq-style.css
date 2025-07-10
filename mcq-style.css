@@ -50,16 +50,43 @@ body {
   margin-top: 15px;
 }
 
+/* NEW: Style for the new Online Test Series button */
+.onlineTestBtn {
+  background-color: orange; /* Orange background */
+  color: white; /* White text */
+  display: inline-block; /* Aligned with timer/start button */
+  padding: 3px 6px; /* Same padding as startBtn for consistency */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right; /* Align to the right, just like startBtn */
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: none; /* Remove default button border */
+  cursor: pointer;
+}
+
+
+/* NOTE: quiz-stats-row अब केवल question-number को कंटेन करेगा, solved-count अलग है */
+.quiz-stats-row {
+    /* इसे flexbox की जरूरत नहीं है अगर इसमें सिर्फ एक आइटम है, लेकिन यदि आप भविष्य में कुछ और जोड़ते हैं तो यह उपयोगी हो सकता है */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .question-number {
   font-weight: bold;
   font-size: 13px;
-  color: #000;
-  margin-bottom: 5px;
-  background-color: #002699;
-  color: white;
+  color: #000; /* Text color is black from your provided CSS, changed to white as per your previous request if it was `color: white;` */
+  background-color: #002699; /* Blue background */
+  color: white; /* Changed to white as per new screenshot (blue button with white text) */
   display: inline-block; /* To make background fit content */
-  padding: 2px 5px; /* Some padding around the number */
+  padding: 2px 5px; /* Padding for the number button */
   border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 5px; /* Retained from your provided CSS */
 }
 
 .solved-count {
@@ -68,8 +95,10 @@ body {
     color: #000;
     background-color: #f2f2f2;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 1px 4px; /* Padding for the solved button */
     border-radius: 5px;
+    /* Since this is now outside quiz-stats-row, you might need to adjust its margin-top/bottom or position if it doesn't look right */
+    margin-top: 10px; /* Example: add some top margin to separate it from buttons */
 }
 
 .question {
