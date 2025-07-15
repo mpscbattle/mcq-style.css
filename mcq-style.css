@@ -85,8 +85,8 @@ body {
   border-radius: 50%; /* Makes it a perfect circle */
   box-sizing: border-box; /* Include padding/border in total width/height */
   flex-shrink: 0; /* Prevent it from shrinking */
-  /* margin-bottom: 5px; Removed, as flexbox handles vertical alignment better, if needed, add to quiz-stats-row */
-}
+  margin-bottom: 10px;
+  margin-top: 10px;
 
 .solved-count {
     font-weight: bold;
@@ -98,6 +98,7 @@ body {
     border-radius: 5px;
     margin-top: 10px; /* Separates it from the navigation buttons */
     /* If you want it right-aligned with question number, you'd need to put them in a common flex container */
+  
 }
 
 .question {
@@ -197,29 +198,27 @@ body {
 }
 
 .analysis-box {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 6px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: 0px;
+  border-radius: 5px;
   font-size: 15px;
 }
 
 .analysis-box .option {
-  margin: 10px 0;Ensures space between options */
-  border: 1px solid #cccccc;
+  margin: 10px 0;
+  border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 .feedback {
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 3px;
   border-radius: 0;
   text-align: center;
