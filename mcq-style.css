@@ -119,16 +119,16 @@ body {
 }
 
 .option.selected {
-  background-color: #80bdff !important;
+  background-color: #ffcc66 !important;
 }
 
 .option.correct {
-  background-color: #339966;
+  background-color: #00cc66;
   color: white;
 }
 
 .option.wrong {
-  background-color: #cc3300;
+  background-color: #ff3333;
   color: white;
 }
 
@@ -197,21 +197,24 @@ body {
 }
 
 .analysis-box {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 15px;
 }
 
 .analysis-box .option {
-  margin: 10px 0;
-  border: 1px solid #ddd;
+  margin: 10px 0;Ensures space between options */
+  border: 1px solid #cccccc;
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .feedback {
@@ -223,16 +226,16 @@ body {
 }
 
 .correct-feedback {
-  background-color: #00994d;
+  background-color: #00e673;
   color: white;
 }
 
 .wrong-feedback {
-  background-color: #b30000;
+  background-color: #ff4d4d;
   color: white;
 }
 
 .not-attempted-feedback {
-  background-color: #66c2ff;
+  background-color: #7979d2;
   color: white;
 }
