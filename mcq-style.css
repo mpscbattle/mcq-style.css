@@ -86,7 +86,8 @@ body {
   box-sizing: border-box; /* Include padding/border in total width/height */
   flex-shrink: 0; /* Prevent it from shrinking */
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+}
 
 .solved-count {
     font-weight: bold;
@@ -98,7 +99,6 @@ body {
     border-radius: 5px;
     margin-top: 10px; /* Separates it from the navigation buttons */
     /* If you want it right-aligned with question number, you'd need to put them in a common flex container */
-  
 }
 
 .question {
@@ -218,23 +218,22 @@ body {
 .feedback {
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 10px;
   padding: 3px;
   border-radius: 0;
   text-align: center;
 }
 
 .correct-feedback {
-  background-color: #00e673;
+  background-color: #79d2a6;
   color: white;
 }
 
 .wrong-feedback {
-  background-color: #ff4d4d;
+  background-color: #ff8080;
   color: white;
 }
 
 .not-attempted-feedback {
-  background-color: #7979d2;
+  background-color: #66d9ff;
   color: white;
 }
