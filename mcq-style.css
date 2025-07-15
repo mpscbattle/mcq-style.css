@@ -85,8 +85,8 @@ body {
   border-radius: 50%; /* Makes it a perfect circle */
   box-sizing: border-box; /* Include padding/border in total width/height */
   flex-shrink: 0; /* Prevent it from shrinking */
-  margin-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .solved-count {
@@ -204,7 +204,7 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .analysis-box .option {
